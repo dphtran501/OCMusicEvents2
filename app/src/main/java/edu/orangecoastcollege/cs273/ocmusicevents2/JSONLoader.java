@@ -33,8 +33,8 @@ public class JSONLoader {
             is.close();
             json = new String(buffer, "UTF-8");
 
-        //TODO: Now that the JSON string has been retrieved, parse it for each individual
-        //TODO: MusicEvent object and add each object to the ArrayList (allEventsList)
+        // Now that the JSON string has been retrieved, parse it for each individual
+        // MusicEvent object and add each object to the ArrayList (allEventsList)
 
         try
         {

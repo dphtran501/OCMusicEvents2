@@ -39,7 +39,7 @@ public class EventListAdapter extends ArrayAdapter<MusicEvent>
         mAllEventsList = allMusicEvents;
     }
 
-    // TODO: Override method called getView
+    // Override method called getView
 
     @NonNull
     @Override
