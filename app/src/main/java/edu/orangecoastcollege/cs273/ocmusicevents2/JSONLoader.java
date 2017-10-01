@@ -14,28 +14,34 @@ import java.util.List;
 /**
  * Class loads MusicEvent data from a formatted JSON (JavaScript Object Notation) file.
  * Populates data model (MusicEvent) with data.
+ *
+ * @author Derek Tran
+ * @version 1.1
+ * @since September 26, 2017
  */
 
-public class JSONLoader {
+public class JSONLoader
+{
 
     /**
      * Loads JSON data from a file in the assets directory.
+     *
      * @param context The activity from which the data is loaded.
      * @throws IOException If there is an error reading from the JSON file.
      */
-    public static List<MusicEvent> loadJSONFromAsset(Context context) throws IOException {
+    public static List<MusicEvent> loadJSONFromAsset(Context context) throws IOException
+    {
         ArrayList<MusicEvent> allEventsList = new ArrayList<>();
-        String json = null;
-            InputStream is = context.getAssets().open("MusicEvents.json");
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, "UTF-8");
+        String json;
+        InputStream is = context.getAssets().open("MusicEvents.json");
+        int size = is.available();
+        byte[] buffer = new byte[size];
+        is.read(buffer);
+        is.close();
+        json = new String(buffer, "UTF-8");
 
         // Now that the JSON string has been retrieved, parse it for each individual
         // MusicEvent object and add each object to the ArrayList (allEventsList)
-
         try
         {
             JSONObject rootObject = new JSONObject(json);

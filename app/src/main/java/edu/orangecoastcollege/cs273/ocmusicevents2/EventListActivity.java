@@ -10,6 +10,15 @@ import android.widget.ListView;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * This activity displays a list of musical artists who will perform at music events in Orange
+ * County. Clicking on a list item will launch <code>EventDetailsActivity</code>, which will display
+ * information about the event performed by the musical artist in the list item clicked.
+ *
+ * @author Derek Tran
+ * @version 2.0
+ * @since September 26, 2017
+ */
 public class EventListActivity extends ListActivity {
 
     private List<MusicEvent> mAllEventsList;
