@@ -23,6 +23,13 @@ public class EventListActivity extends ListActivity {
 
     private List<MusicEvent> mAllEventsList;
 
+    /**
+     * Initializes <code>EventListActivity</code> by inflating its UI.
+     *
+     * @param savedInstanceState Bundle containing the data it recently supplied in
+     *                           onSaveInstanceState(Bundle) if activity was reinitialized after
+     *                           being previously shut down. Otherwise it is null.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +47,14 @@ public class EventListActivity extends ListActivity {
 
     }
 
+    /**
+     * Launches <code>EventDetailsActivity</code> showing information about the MusicEvent that was
+     * clicked in the ListView.
+     * @param l The ListView where the click happened.
+     * @param v The view that was clicked within the ListView.
+     * @param position The position of the view in the list.
+     * @param id The row id of the item that was clicked.
+     */
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
 
