@@ -19,7 +19,8 @@ import java.util.List;
  * @version 2.0
  * @since September 26, 2017
  */
-public class EventListActivity extends ListActivity {
+public class EventListActivity extends ListActivity
+{
 
     private List<MusicEvent> mAllEventsList;
 
@@ -31,7 +32,8 @@ public class EventListActivity extends ListActivity {
      *                           being previously shut down. Otherwise it is null.
      */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         try
@@ -50,13 +52,15 @@ public class EventListActivity extends ListActivity {
     /**
      * Launches <code>EventDetailsActivity</code> showing information about the MusicEvent that was
      * clicked in the ListView.
-     * @param l The ListView where the click happened.
-     * @param v The view that was clicked within the ListView.
+     *
+     * @param l        The ListView where the click happened.
+     * @param v        The view that was clicked within the ListView.
      * @param position The position of the view in the list.
-     * @param id The row id of the item that was clicked.
+     * @param id       The row id of the item that was clicked.
      */
     @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
+    protected void onListItemClick(ListView l, View v, int position, long id)
+    {
 
         Intent detailsIntent = new Intent(this, EventDetailsActivity.class);
         MusicEvent selectedEvent = mAllEventsList.get(position);

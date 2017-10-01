@@ -38,8 +38,9 @@ public class EventListAdapter extends ArrayAdapter<MusicEvent>
 
     /**
      * Creates a new EventListAdapter object.
-     * @param context The activity that uses this adapter.
-     * @param resource The layout file to inflate.
+     *
+     * @param context        The activity that uses this adapter.
+     * @param resource       The layout file to inflate.
      * @param allMusicEvents A list of MusicEvent objects.
      */
     public EventListAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<MusicEvent> allMusicEvents)
@@ -58,15 +59,16 @@ public class EventListAdapter extends ArrayAdapter<MusicEvent>
      * parent View (GridView, ListView...) will apply default layout parameters unless you use
      * inflate(int, android.view.ViewGroup, boolean) to specify a root view and to prevent
      * attachment to the root.
-     * @param position The position of the item within the adapter's data set of the item whose view
-     *                 we want.
+     *
+     * @param position    The position of the item within the adapter's data set of the item whose view
+     *                    we want.
      * @param convertView The old view to reuse, if possible. Note: You should check that this view
      *                    is non-null and of an appropriate type before using. If it is not possible
      *                    to convert this view to display the correct data, this method can create a
      *                    new view. Heterogeneous lists can specify their number of view types, so
      *                    that this View is always of the right type (see getViewTypeCount() and
      *                    getItemViewType(int)).
-     * @param parent The parent that this view will eventually be attached to.
+     * @param parent      The parent that this view will eventually be attached to.
      * @return A View corresponding to the data at the specified position.
      */
     @NonNull
