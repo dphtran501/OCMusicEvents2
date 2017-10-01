@@ -23,6 +23,7 @@
             android:id="@+id/listItemTitleTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_textview_margins"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             tools:text="Title"/>
 

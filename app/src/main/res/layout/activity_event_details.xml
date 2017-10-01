@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_margins"
     tools:context="edu.orangecoastcollege.cs273.ocmusicevents2.EventDetailsActivity"
     android:orientation="vertical">
 
@@ -14,8 +15,6 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp"
-
         android:layout_weight="2"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
@@ -25,21 +24,39 @@
         android:id="@+id/eventTitleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="0"
-        android:text="TextView"
-        android:textSize="60sp"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:text="Artist"/>
+
 
     <TextView
-        android:id="@+id/eventDetailsTextView"
+        android:id="@+id/eventDateDayTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="40dp"
-        android:layout_weight="1"
-        android:text="TextView"
-        android:textSize="30sp"/>
+        tools:text="Date"/>
+
+    <TextView
+        android:id="@+id/eventTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Time"/>
+
+    <TextView
+        android:id="@+id/eventLocationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Location"/>
+
+    <TextView
+        android:id="@+id/eventAddress1TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Address1"/>
+
+    <TextView
+        android:id="@+id/eventAddress2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Address2"/>
 
     <Button
         android:id="@+id/backButton"
@@ -48,5 +65,5 @@
         android:layout_gravity="center_horizontal"
         android:onClick="goBackToList"
         android:text="Back to List"
-        android:textSize="40sp"/>
+        />
 </LinearLayout>
